@@ -1,16 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Grammatik from '../grammatik.component';
 import ppa from '../pictures/grammatik/ppa.png';
 import ppp from '../pictures/grammatik/ppp.png';
 
 const Partizip = () => {
-    return(
-        <div>
-            <Grammatik />
-            <h1>die Partizipien</h1>
-
-            <p class="grammatik">Partizipien sind Verben, die sich in Adjektive verwandeln. So können sie ein Substantiv beschreiben.</p>
-
+    const PPA = () => {
+        return (
+            <div>
             <h2>PPA – Partizip Präsens Aktiv</h2>
             <p>Das PPA wird wie die Substantive auf -ns gebildet (mons, pons, fons…). Im Deutschen erkennst du es an einem -nd. Es ist im Deutschen selten, findet sich aber in folgenden Wendungen:</p>
             <p>‚der springe<b>nd</b>e Punkt‘</p>
@@ -41,8 +37,13 @@ const Partizip = () => {
             <p>Beachte, dass vom Partizip auch ein Objekt abhängen kann:</p>
             <p>Icarus <b>patrem</b> vocans in mare cecidit.</p>
             <p>Ikaraus ist seinen <b>Vater</b> rufend ins Meer gefallen.</p>
+            </div>
+        )
+    }
 
-
+    const PPP = () => {
+        return (
+            <div>
             <h2>PPP – Partizip Perfekt Passiv</h2>
             <p>Das PPP erkennt man im Deutschen an der Vorsilbe ge-: </p>
             <p>bauen – <b>ge</b>baut; lesen – <b>ge</b>lesen; fahren – <b>ge</b>fahren</p>
@@ -63,7 +64,13 @@ const Partizip = () => {
             <p>d) adverbialer Nebensatz</p>
             <p>Europa a Iove capta in mare fugit.</p>
             <p>Die von Jupiter geraubte Europa floh ins Meer. → Nachdem Europa von Jupiter geraubt wurde, floh sie ins Meer.</p>
+            </div>
+        )
+    }
 
+    const PFA = () => {
+        return (
+            <div>
             <h2>PFA – Partizip Futur Aktiv</h2>
             <p>Ihr kennt bis jetzt zwei lateinische Formen des Partizips:</p>
             <ul>
@@ -83,7 +90,34 @@ const Partizip = () => {
             </ul>
             <p>Man nennt dieses Partizip das Partizip Futur Aktiv <b>(PFA)</b>.</p>
             <p>Wörtlich müsste man ja (weil es ein Partizip ist) <i>ventus spiraturus</i> so übersetzen: 'der wehen werdende Wind'. Das klingt allerdings viel zu furchtbar. Daher ganz einfach wie ein Futur übersetzen.</p>
+            </div>
+        )
+    }
 
+    const components = [<PPA />, <PPP />, <PFA />];
+    const [activeIndex, setActiveIndex] = useState(0);
+    
+    const items = ['PPA', 'PPP','PFA'];
+
+    function clickButton(index){
+        setActiveIndex(index);
+    }
+
+    const renderedButtons = items.map((item, index) => {
+        const active = index === activeIndex ? 'active' : '';
+        return <div key={items.indexOf(item)} className={`butn ${active}`} onClick={() => clickButton(items.indexOf(item))}>{item}</div>
+    });
+
+    return(
+        <div>
+            <Grammatik />
+            <div className="container">
+            <h1>Partizip</h1>
+            <div className="flex" style={{justifyContent: 'center'}}>
+                {renderedButtons}
+            </div>
+            <div className="component">{components[activeIndex]}</div>
+        </div>
         </div>
     )
 }

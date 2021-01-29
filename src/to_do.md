@@ -1,7 +1,3 @@
-# from HTML to React
-
-* Partizip
-
 # Style
 
 * kleine Verben
@@ -14,7 +10,3 @@
 
 * Vokabeln
 * Konjunktiv
-
-# Link 
-
-* unregelmäßige Verben (Aktiv Perfekt)

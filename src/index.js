@@ -5,8 +5,6 @@ import './css/component.main.css';
 
 import App from './App';
 
-// zu BrowserRouter basename={'/build'}
-
 ReactDOM.render(
   <BrowserRouter > 
   <App />

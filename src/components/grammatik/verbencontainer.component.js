@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { TableVerben } from './tables.component';
 
 const AktPraes = () => {
@@ -67,7 +68,7 @@ const AktPerf = () => {
     return(
         <div>
         <div className="grammatik">
-	    <p>	v-Perfekt: a- und i-Konjugation <br></br> u-Perfekt: e-Konjugation <br></br> Beachte die <a href="unregelmaessige_verben.html">unregelmäßigen Verben</a></p>
+	    <p>	v-Perfekt: a- und i-Konjugation <br></br> u-Perfekt: e-Konjugation <br></br> Beachte die <Link to={"/grammatik/stammformen"}>unregelmäßigen Verben</Link></p>
         </div>
         <div className="grammar-grid">
         <table className="grammatik">
