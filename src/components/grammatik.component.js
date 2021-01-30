@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Grammatik = () => {
     return (
         <Fragment>
-        <div className="container">
+        <div className="">
         <div className="grammatik-panel">
         <div className="grid">
         <div className="grid-item">

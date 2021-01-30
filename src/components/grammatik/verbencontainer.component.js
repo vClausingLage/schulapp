@@ -157,10 +157,10 @@ const PassImp = () => {
 }
 
 const PassPerf = () => {
-    const PerfA = ['amatus/a/um','amatus/a/um','amatus/a/um','amati/ae/a','amati/ae/a','amati/ae/a'];
-    const PerfE = ['tacitus/a/um','tacitus/a/um','tacitus/a/um','taciti/ae/a','taciti/ae/a','taciti/ae/a'];
-    const PerfI = ['auditus/a/um','auditus/a/um','auditus/a/um','auditi/ae/a','auditi/ae/a','auditi/ae/a'];
-    const PerfK = ['dictus/a/um','dictus/a/um','dictus/a/um','dicti/ae/a','dicti/ae/a','dicti/ae/a'];
+    const PerfA = ['amatus/a/um sum','amatus/a/um es','amatus/a/um est','amati/ae/a sumus','amati/ae/a estis','amati/ae/a sunt'];
+    const PerfE = ['tacitus/a/um sum','tacitus/a/um es','tacitus/a/um est','taciti/ae/a sumus','taciti/ae/a estis','taciti/ae/a sunt'];
+    const PerfI = ['auditus/a/um sum','auditus/a/um es','auditus/a/um est','auditi/ae/a sumus','auditi/ae/a estis','auditi/ae/a sunt'];
+    const PerfK = ['dictus/a/um sum','dictus/a/um es','dictus/a/um est','dicti/ae/a sumus','dicti/ae/a estis','dicti/ae/a sunt'];
     return(
         <div>
         <div className="grammatik">

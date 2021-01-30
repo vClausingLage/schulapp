@@ -4,13 +4,11 @@ import Grammatik from '../grammatik.component';
 
 const Aktiv = () => {
     const components = [<AktPraes />, <AktFut />, <AktImp />, <AktPerf />];
-    const [show, setShow] = useState(0);
     const [activeIndex, setActiveIndex] = useState(0);
     
     const items = ['Päsens', 'Futur I','Imperfekt','Perfekt'];
 
     function clickButton(index){
-        setShow(index);
         setActiveIndex(index);
     }
 
@@ -29,7 +27,7 @@ const Aktiv = () => {
             <div className="flex" style={{justifyContent: 'center'}}>
                 {renderedButtons}
             </div>
-            <div className="component">{components[show]}</div>
+            <div className="component">{components[activeIndex]}</div>
         </div>
         </div>
     )

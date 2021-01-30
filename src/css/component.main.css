@@ -20,7 +20,7 @@ body {
 }
 
 h3, h4 {
-    text-decoration: underline #54aeb4;
+    text-decoration: underline 2px #54aeb4;
     
 }
 
@@ -38,7 +38,6 @@ img {
 .container {
     margin-right: 0.7rem;
     margin-left: 0.7rem;
-    margin: auto;
 }
 
 .cursor {
@@ -46,7 +45,7 @@ img {
 }
 
 .butn {
-    background-color: oldlace;
+    background-color: #fff3d8;
     border-radius: 0.3rem;
     margin:0.2rem;
     padding: 0.6rem;
@@ -58,8 +57,7 @@ img {
     background-color: lightgrey;
 }
 .navbutn {
-    background-color: oldlace;
-    border-radius: 0.5rem;
+    background-color: white;
     margin:0.2rem;
     padding: 0.7rem;
     text-decoration: none;
@@ -67,14 +65,16 @@ img {
     color: black;
 }
 .navbutn:hover {
-    background-color: lightgrey;
+    text-decoration: underline 2px dotted #54aeb4;
 }
 
+/* Header und Footer*/
 .panel {
-    background-color: oldlace;
+    background-color: #fff3d8;
     padding-top: .2rem;
     padding-bottom: 0.2rem;
     padding-left: 1.6rem;
+    margin-top: .5rem;
     margin-bottom: .5rem;
     border-bottom: 3px solid  #54aeb4;
 }
@@ -98,16 +98,18 @@ img {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: stretch;
+    justify-items: center;
     grid-auto-flow: row;
     /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
     grid-gap: 1rem;
 }
 .grid-item {
-    background: #FAF0E6;
     padding: 0.7rem;
     border-radius: .6rem;
     margin: 0.4rem;
+}
+.grid-item > h3 {
+    text-align: center;
 }
 .grammar-grid {
     display: grid;
@@ -124,7 +126,7 @@ img {
     margin: 0.4rem;
 }
 .grammatik-panel {
-    background-color: lightcoral;
+    background-color: #54aeb4;
 }
 
 .tableV {

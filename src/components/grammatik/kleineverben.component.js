@@ -88,9 +88,11 @@ const KleineVerben = () => {
 		return(
 			<div className="grammar-grid container">
 				<div className="grid-item">
+					<h3>Präsens</h3>
     <table className="tableV">
-        <tr>
-            <th>Präsens</th><th>Singular</th><th>Plural</th>
+        <tbody>
+		<tr>
+            <th></th><th>Singular</th><th>Plural</th>
         </tr>
         <tr >
             <td>1</td><td>possum</td><td>possumus</td>
@@ -101,12 +103,15 @@ const KleineVerben = () => {
         <tr >
             <td>3</td><td>potest</td><td>possunt</td>
         </tr>
+		</tbody>
     </table>
 	</div>
 	<div className="grid-item">
+		<h3>Imperfekt</h3>
     <table className="tableV">
-        <tr>
-            <th>Perfekt</th><th>Singular</th><th>Plural</th>
+       <tbody>
+	   <tr>
+            <th></th><th>Singular</th><th>Plural</th>
         </tr>
         <tr >
             <td>1</td><td>poteram</td><td>poteramus</td>
@@ -117,12 +122,15 @@ const KleineVerben = () => {
         <tr >
             <td>3</td><td>poterat</td><td>poterant</td>
         </tr>
+	   </tbody>
     </table>
 	</div>
 	<div className="grid-item">
+		<h3>Perfekt</h3>
     <table className="tableV">
-        <tr>
-            <th>Perfekt</th><th>Singular</th><th>Plural</th>
+       <tbody>
+	   <tr>
+            <th></th><th>Singular</th><th>Plural</th>
         </tr>
         <tr >
             <td>1</td><td>potui</td><td>potuimus</td>
@@ -133,9 +141,10 @@ const KleineVerben = () => {
         <tr >
             <td>3</td><td>potuit</td><td>potuerunt</td>
         </tr>
+	   </tbody>
     </table>
 	</div>
-			</div>
+	</div>
 		)
 	}
 
@@ -143,24 +152,25 @@ const KleineVerben = () => {
 		return (
 			<div className="grammar-grid container">
 				<div className="grid-item">
-			<table className="tableV">
-				<tr>
-					<th>Präsens</th><th>Singular</th><th>Plural</th>
+				<h3>Präsens</h3>
+				<table className="tableV">
+				<tbody>
+				<tr><th></th><th>Singular</th><th>Plural</th>
 				</tr>
-				<tr >
-					<td>1</td><td>volo</td><td>volumus</td>
+				<tr ><td>1</td><td>volo</td><td>volumus</td>
 				</tr>
-				<tr >
-					<td>2</td><td>vis</td><td>vultis</td>
+				<tr ><td>2</td><td>vis</td><td>vultis</td>
 				</tr>
-				<tr >
-					<td>3</td><td>vult</td><td>volunt</td>
+				<tr ><td>3</td><td>vult</td><td>volunt</td>
 				</tr>
-			</table>
-			</div>
-			<div className="grid-item">
-			<table className="tableV">
-					<th>Perfekt</th><th>Singular</th><th>Plural</th>
+				</tbody>
+				</table>
+				</div>
+				<div className="grid-item">
+				<h3>Perfekt</h3>
+				<table className="tableV">
+				<tbody>
+				<th></th><th>Singular</th><th>Plural</th>
 				<tr >
 					<td>1</td><td>volui</td><td>voluimus</td>
 				</tr>
@@ -170,8 +180,9 @@ const KleineVerben = () => {
 				<tr >
 					<td>3</td><td>voluit</td><td>voluerunt</td>
 				</tr>
-			</table>
-			</div>
+				</tbody>
+				</table>
+				</div>
 			</div>
 		)
 	}
@@ -180,7 +191,9 @@ const KleineVerben = () => {
 		return (
 			<div className="grammar-grid container">
 				<div className="grid-item">
+					<h3>Präsens</h3>
 			<table className="tableV">
+			<tbody>
 			<tr>
 				<th></th><th>Singular</th><th>Plural</th>
 			</tr>
@@ -193,10 +206,13 @@ const KleineVerben = () => {
 			<tr >
 				<td>3</td><td>it</td><td>eunt</td>
 			</tr>
+			</tbody>
 			</table>
 			</div>
 			<div className="grid-item">
+			<h3>Perfekt</h3>
 			<table className="tableV">
+			<tbody>
 			<tr>
 				<th></th><th>Singular</th><th>Plural</th>
 			</tr>
@@ -209,6 +225,7 @@ const KleineVerben = () => {
 			<tr >
 				<td>3</td><td>it</td><td>ierunt</td>
 			</tr>
+			</tbody>
 			</table>
 			</div>
 			</div>

@@ -1,9 +1,8 @@
 # Style
 
-* kleine Verben
+* Steigerung!!! in einzelne Komponenten
 * Grammatik BAR COLOR
 * Focus an Grammatik
-* Tabelle Passiv Perfekt!
 * Grid Rätsel!
 
 # Tabellen

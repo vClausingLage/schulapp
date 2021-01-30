@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Grammatik from '../grammatik.component';
 
 const Praepositionen = () => {
     return (
-        <div className="container">
+        <Fragment>
             <Grammatik />
+            <div className="container">
             <h1>Präpositionen</h1>
 
             <div><p>Diese ‚kleinen Wörter‘ stehen immer vor dem Wort/den Wörtern, auf die sie wirken: Alle Präpositionen stehen mit einem bestimmten Fall, am häufigsten mit Akkusativ oder Ablativ. Wenn eine Präposition mit zwei Fällen stehen kann (wie <b>in</b>), hat sie dadurch unterschiedliche Bedeutungen, wobei der Akkusativ häufig eine Richtung, der Ablativ häufig einen Ort oder Zeitpunkt bestimmt:</p></div>
@@ -48,6 +49,7 @@ const Praepositionen = () => {
             </ul>
             </div>
         </div>
+        </Fragment>
     )
 }
 
