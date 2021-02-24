@@ -133,37 +133,33 @@ const Contest = ({ description, heading }) => {
 
         <h2>Bild</h2>
         <div className="container">
-        <div className="w3-row">
-        <div className="w3-third">
-            <img alt='not found' src={image01} id="baum01" style={{width: '100%'}} />
+        <div className="grid-cont">
+        <div className="grid-item-cont">
+            <img alt='not found' src={image01} id="baum01"  />
         </div>
-        <div className="w3-third">
-            <img alt='not found' src={image02} id="baum02" style={{width: '100%'}} />
+        <div className="grid-item-cont">
+            <img alt='not found' src={image02} id="baum02"  />
         </div>
-        <div className="w3-third">
-            <img alt='not found' src={image03} id="baum03" style={{width: '100%'}} />
+        <div className="grid-item-cont">
+            <img alt='not found' src={image03} id="baum03"  />
         </div>
+        <div className="grid-item-cont">
+            <img alt='not found' src={image04} id="baum05"  />
         </div>
-        <div className="w3-row">
-        <div className="w3-third">
-            <img alt='not found' src={image04} id="baum05" style={{width: '100%'}} />
+        <div className="grid-item-cont">
+            <img alt='not found' src={image05} id="baum06"  />
         </div>
-        <div className="w3-third">
-            <img alt='not found' src={image05} id="baum06" style={{width: '100%'}} />
+        <div className="grid-item-cont">
+            <img alt='not found' src={image06} id="baum07"  />
         </div>
-        <div className="w3-third">
-            <img alt='not found' src={image06} id="baum07" style={{width: '100%'}} />
+        <div className="grid-item-cont">
+            <img alt='not found' src={image07} id="baum09"  />
         </div>
+        <div className="grid-item-cont">
+            <img alt='not found' src={image08} id="baum10"  />
         </div>
-        <div className="w3-row">
-        <div className="w3-third">
-            <img alt='not found' src={image07} id="baum09" style={{width: '100%'}} />
-        </div>
-        <div className="w3-third">
-            <img alt='not found' src={image08} id="baum10" style={{width: '100%'}} />
-        </div>
-        <div className="w3-third">
-            <img alt='not found' src={image09} id="baum11" style={{width: '100%'}} />
+        <div className="grid-item-cont">
+            <img alt='not found' src={image09} id="baum11"  />
         </div>
         </div>
         </div>
