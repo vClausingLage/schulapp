@@ -5,6 +5,7 @@ import Index from './components/index.component';
 import Header from './components/header.component';
 import Footer from './components/footer.component';
 import Grammatik from './components/grammatik.component';
+import Lexikon from './components/lexikon.component';
 // Grammatik
 import Komparativ from './components/grammatik/komparativ.component.js';
 import Praepositionen from './components/grammatik/praepositionen.component';
@@ -34,11 +35,13 @@ const App = () => {
     <Header />
             <nav className="flexnav">
               <Link className='navbutn' to={'/'}>Home</Link>
+              <Link className='navbutn' to={'/lexikon'}>Lexikon</Link>
               <Link className='navbutn' to={'/grammatik'}>Grammatik</Link>
               <Link className='navbutn' to={'/aufgaben'}>Aufgaben</Link>
             </nav>
       <Switch>
           <Route exact path='/' component={ Index } />
+          <Route path='/lexikon' component={ Lexikon } />
           <Route exact path='/grammatik' component={ Grammatik } />
           <Route path='/grammatik/komparativ' component={ Komparativ } />
           <Route path='/grammatik/praepositionen' component={ Praepositionen } />

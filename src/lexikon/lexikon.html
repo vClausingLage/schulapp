@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Latein Lexikon</title>
+    <meta charset="utf-8" lang="de_DE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="scripte.js"></script>
+	<link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="main2.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <script>
+
+    </script>
+</head>
+
+<body>
+
+<div class="w3-panel w3-sand">
+    <p>Latein Lexikon</p>
+</div>
+
+<p class="hinweis">Das Lexikon befindet sich gerade noch im Aufbau.</p>
+
+<div class="w3-container">
+    <div class="w3-panel w3-light-blue">
+        <p>zur Benutzung: Die besten Ergebnisse erhälst Du, wenn Du</p>
+        <ul>
+            <li>für Verben den <i>Infinitiv</i> oder die <i>1. Pers. Sg.</i> eingibst</li>
+            <li>für Substantive den <i>Nominativ Singular</i></li>
+            <li>für Adjektive den <i>Nominativ Singular Maskulinum</i></li>
+        </ul>
+        <p>Soweit also fast wie im <i>analogen</i> Lexikon.</p>
+      </div>
+      
+      <div style="margin: auto; width: 100%">
+          <p style="text-align: center;"><input id="suchfeld" type="text" name="suchfeld2" style="margin-right: 5px"><button id="Btn" onclick="startSuche()" type="button" class="btn btn-info">suche</button></p>
+      </div>
+</div>
+
+<div id="txtHint"></div>
+
+<script>
+    document.getElementById("suchfeld")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("Btn").click();
+    }
+});
+</script>
+
+<div class="w3-panel w3-sand">
+	<p>&copy; clausing-lage 2020</p>
+</div>
+</body>
+</html>
