@@ -23,7 +23,7 @@ import Deponentien from './components/grammatik/deponentien.component';
 import AufgabenIndex from './components/aufgabenIndex.component';
 import Klasse7a from './components/klasse7a.component';
 import Klasse12 from './components/klasse12.component';
-import CalcArea from './components/areacalculator.component';
+import CalcArea from './components/clc.component';
 //<Link className='' to={'/index'}>Home</Link>
 //<Link className='' to={'/grammatik'}>Grammatik</Link>
 //<Link className='' to={'/wikinger'}>Wikinger</Link>
@@ -39,6 +39,7 @@ const App = () => {
               <Link className='navbutn' to={'/lexikon'}>Lexikon</Link>
               <Link className='navbutn' to={'/grammatik'}>Grammatik</Link>
               <Link className='navbutn' to={'/aufgaben'}>Aufgaben</Link>
+              <Link className='navbutn' to={'/clc'}>Didos Problem</Link>
             </nav>
       <Switch>
           <Route exact path='/' component={ Index } />
@@ -59,7 +60,7 @@ const App = () => {
           <Route exact path='/aufgaben' component={ AufgabenIndex } />
           <Route path='/klasse7a' component={ Klasse7a } />
           <Route path='/klasse12' component={ Klasse12 } />
-          <Route path='/areacalculator' component={ CalcArea } />
+          <Route exact path='/clc' component={ CalcArea } />
       </Switch>
     <Footer />
     </Router>
