@@ -31,40 +31,53 @@ import CalcArea from './components/clc.component';
 //<Link className='' to={'/App/aufgaben'}>Aufgaben</Link>
 
 const App = () => {
-    return (
+  return (
     <Router>
-    <Header />
-            <nav className="flexnav">
-              <Link className='navbutn' to={'/'}>Home</Link>
-              <Link className='navbutn' to={'/lexikon'}>Lexikon</Link>
-              <Link className='navbutn' to={'/grammatik'}>Grammatik</Link>
-              <Link className='navbutn' to={'/aufgaben'}>Aufgaben</Link>
-              <Link className='navbutn' to={'/clc'}>Didos Problem</Link>
-            </nav>
+      <Header />
+      <nav className='flexnav'>
+        <Link className='navbutn' to={'/App/'}>
+          Home
+        </Link>
+        {/*<Link className='navbutn' to={'/App/lexikon'}>
+          Lexikon
+  </Link>*/}
+        <Link className='navbutn' to={'/App/grammatik'}>
+          Grammatik
+        </Link>
+        <Link className='navbutn' to={'/App/aufgaben'}>
+          Aufgaben
+        </Link>
+        <Link className='navbutn' to={'/App/clc'}>
+          Didos Problem
+        </Link>
+      </nav>
       <Switch>
-          <Route exact path='/' component={ Index } />
-          <Route path='/lexikon' component={ Lexikon } />
-          <Route exact path='/grammatik' component={ Grammatik } />
-          <Route path='/grammatik/komparativ' component={ Komparativ } />
-          <Route path='/grammatik/praepositionen' component={ Praepositionen } />
-          <Route path='/grammatik/vokativ' component={ Vokativ } />
-          <Route path='/grammatik/imperativ' component={ Imperativ } />
-          <Route path='/grammatik/aktiv' component={ Aktiv } />
-          <Route path='/grammatik/passiv' component={ Passiv } />
-          <Route path='/grammatik/kleineverben' component={ KleineVerben } />
-          <Route path='/grammatik/stammformen' component={ Stammformen } />
-          <Route path='/grammatik/konjunktiv' component={ Konjunktiv } />
-          <Route path='/grammatik/partizip' component={ Partizip } />
-          <Route path='/grammatik/gerund' component={ Gerund } />
-          <Route path='/grammatik/deponentien' component={ Deponentien } />
-          <Route exact path='/aufgaben' component={ AufgabenIndex } />
-          <Route path='/klasse7a' component={ Klasse7a } />
-          <Route path='/klasse12' component={ Klasse12 } />
-          <Route exact path='/clc' component={ CalcArea } />
+        <Route exact path='/App/' component={Index} />
+        <Route path='/App/lexikon' component={Lexikon} />
+        <Route exact path='/App/grammatik' component={Grammatik} />
+        <Route path='/App/grammatik/komparativ' component={Komparativ} />
+        <Route
+          path='/App/grammatik/praepositionen'
+          component={Praepositionen}
+        />
+        <Route path='/App/grammatik/vokativ' component={Vokativ} />
+        <Route path='/App/grammatik/imperativ' component={Imperativ} />
+        <Route path='/App/grammatik/aktiv' component={Aktiv} />
+        <Route path='/App/grammatik/passiv' component={Passiv} />
+        <Route path='/App/grammatik/kleineverben' component={KleineVerben} />
+        <Route path='/App/grammatik/stammformen' component={Stammformen} />
+        <Route path='/App/grammatik/konjunktiv' component={Konjunktiv} />
+        <Route path='/App/grammatik/partizip' component={Partizip} />
+        <Route path='/App/grammatik/gerund' component={Gerund} />
+        <Route path='/App/grammatik/deponentien' component={Deponentien} />
+        <Route exact path='/App/aufgaben' component={AufgabenIndex} />
+        <Route path='/App/klasse7a' component={Klasse7a} />
+        <Route path='/App/klasse12' component={Klasse12} />
+        <Route exact path='/App/clc' component={CalcArea} />
       </Switch>
-    <Footer />
+      <Footer />
     </Router>
-    );
-  }
+  );
+};
 
 export default App;
